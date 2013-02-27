@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<meta name="description" content="Double to Single Quotes : Plugin for Orion Editor" />
+	
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+	<script type="text/javascript" src="lib/plugin.js"></script>
+	<script type="text/javascript" src="lib/esprima.js"></script>
+	<script type="text/javascript" src="Double2Single.js"></script>
+		
+		<title>Double to Single Quotes Plugin for Orion</title>
+		
+		<script>
+			function installIn2Another() {
+				var url = prompt("Enter Orion url");
+				if (url){
+					window.open(url + "/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
+				}
+			}
+			
+			function installIn2OrionHub() {
+				window.open("https://orionhub.org/settings/settings.html#,category=plugins,installPlugin=" + window.location.href.split('#')[0]);
+			}
+		</script>
+	</head>
+
+	<body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+		<header class="inner">
+			<a id="forkme_banner" href="https://github.com/kenwalker/snippet">View on GitHub</a>
+			<h1 id="project_title">D2S : Double to Single Quotes Plugin for Orion</h1>
+			<h2 id="project_tagline">An Orion Plugin to convert double quotes in your JavaScript file to single quotes</h2>
+		</header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<p>
+				This is a plugin for <a href="http://eclipse.org/orion/">Eclipse Orion</a>.
+				The plugin adds a command to the Orion Editor to convert double quotes to single quotes in your JavaScript files.
+				After installing the plugin there will be a new button in the text editor labelled <b>"D2S"</b>. When you press it, either
+				the selected text or the entire file will have double quotes converted to single quotes unless otherwise required.
+			</p>
+			<p>
+				The plugin is based on <a href="http://esprima.org">Esprima</a> and the code from a <a href="https://github.com/ariya">Ariya Hidayat</a> blog post <a href="http://ariya.ofilabs.com/2012/02/from-double-quotes-to-single-quotes.html">From double-quotes to single-quotes</a>
+			</p>
+			<p>
+				<a href="" onclick="installIn2OrionHub();">Install into OrionHub</a>
+				or <a href="" onclick="installIn2Another();">another Orion instance</a>
+			</p>
+</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Created by <a href="https://github.com/kenwalker">Ken Walker</a> with code from <a href="https://github.com/ariya">Ariya Hidayat</a><br>
+			under Eclipse Public License v1.0 (http://www.eclipse.org/legal/epl-v10.html),<br>
+			and the Eclipse Distribution License v1.0 (http://www.eclipse.org/org/documents/edl-v10.html)</p>
+		</footer>
+	</div>
+
+	</body>
+</html>
