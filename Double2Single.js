@@ -11,7 +11,7 @@
  *
  * Contributors:
  *    Ken Walker
- *    Ariya Hidayat 
+ *    Ariya Hidayat
  *******************************************************************************/
 
 /*global define orion esprima window */
